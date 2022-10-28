@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rentel</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        fieldset,div {
+            margin-top: 20px;
+        }
+        #pargh {
+            /* border: 3px solid red; */
+            width: 300px;
+            text-align: end;
+        }
+    </style>
 </head>
 <body>
-    <h1>ACME Car Rental</h1>
+    <div class="container">
+        <h1>ACME Car Rental</h1>
+        <form>
+            <fieldset>
+                <legend>Pickup Information</legend>
+                <p>Pickup date <input type="date"></p>
+                <p>Number of days <input type="text"> </p>
+            </fieldset>
+            <fieldset>
+                <legend>Option</legend>
+                <input type="checkbox" id="tollTag" name="tollTag" value="tolltag">
+                <label for="tollTag">Electronic Toll Tag ($3.95/day)</label><br>
+                <input type="checkbox" id="gps" name="gps">
+                <label for="gps"> GPS ($4.95/day)</label><br>
+                <input type="checkbox" id="roadside" name="roadside">
+                <label for="roadside"> Roadside Assistance ($2.95/day)</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Under 25</legend>
+                <input type="radio" name="answer" id="no">No 
+                <input type="radio" name="answer" id="yes"> Yes
+            </fieldset>
+            <div id="butn">
+                <button>Estimate total Cost</button>
+            </div>
+            <div id="pargh">
+                <p>Car rental : <output>xxx.xx</output></p>
+                <p>Option : <output>xx.xx</output></p>
+                <p>Under 25 Surcharge : <output>xx.xx</output></p>
+                <p>Total due: <output>xx.xx</output></p>
+            </div>
+        </form>
+    </div>
+    
 </body>
 </html>
