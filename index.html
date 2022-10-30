@@ -26,8 +26,8 @@
         <form>
             <fieldset>
                 <legend>Pickup Information</legend>
-                <p>Pickup date <input type="date"></p>
-                <p>Number of days <input type="text"> </p>
+                <p>Pickup date <input type="date" id="pickupDate"></p>
+                <p>Number of days <input type="number" id="numOfDays"> </p>
             </fieldset>
             <fieldset>
                 <legend>Option</legend>
@@ -43,17 +43,16 @@
                 <input type="radio" name="answer" id="no">No 
                 <input type="radio" name="answer" id="yes"> Yes
             </fieldset>
-            <div id="butn">
-                <button>Estimate total Cost</button>
-            </div>
+            <div>
+                <input type="button" value="Estimate total Cost" id="estBtn">
             <div id="pargh">
-                <p>Car rental : <output>xxx.xx</output></p>
-                <p>Option : <output>xx.xx</output></p>
-                <p>Under 25 Surcharge : <output>xx.xx</output></p>
-                <p>Total due: <output>xx.xx</output></p>
+                <p>Car rental : <output class="carRental">xxx.xx</output></p>
+                <p>Option : <output class="option">xx.xx</output></p>
+                <p>Under 25 Surcharge : <output class="surcharge">xx.xx</output></p>
+                <p>Total due: <output class="total">xx.xx</output></p>
             </div>
         </form>
     </div>
-    
+    <script src="./jsEstimate.js"></script>
 </body>
 </html>
