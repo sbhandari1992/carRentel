@@ -1,5 +1,6 @@
 let numofDays;
-let dailyBasicChrgAmt = 30;
+
+let dailyBasicChrgAmt = 29.99;
 let surCharge = .30;
 let tollTag = 3.95;
 let gps = 4.95;
@@ -20,8 +21,8 @@ function calTotalAmt() {
     document.querySelector('output.surcharge').innerText = (`$${totalSurChargeAmt.toFixed(2)}`);
     ///for total due
     let totalDue = totalBasicChrgAmt + totalOptChrgAmt + totalSurChargeAmt;
-    document.querySelector('output.total').innerText = (`$${totalDue.toFixed(2)}`);
- 
+
+    document.querySelector('output.total').innerText = (`$${totalDue.toFixed(2)}`); 
 }
 
 function getOptCharge() {
